@@ -1,0 +1,1 @@
+add_executable(meeting-planner main.cpp)
