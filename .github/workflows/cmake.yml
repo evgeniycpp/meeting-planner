@@ -26,11 +26,8 @@ jobs:
           cmake: 3.23.1
           conan: 1.48.1
       
-    - name: Create build directory
-      run: mkdir ${{github.workspace}}/build
-      
     - name: Run Conan
-      run: conan install -if=${{github.workspace}}/build .
+      run: conan install -if=${{github.workspace}}/build -pr:b=default .
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
