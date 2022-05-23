@@ -23,7 +23,7 @@ jobs:
     - name: Install C++ tools 
       uses: aminya/setup-cpp@v1
       with:
-          cmake: 3.23
+          cmake: 3.23.1
           conan: 1.48.1
       
     - name: Create build directory
